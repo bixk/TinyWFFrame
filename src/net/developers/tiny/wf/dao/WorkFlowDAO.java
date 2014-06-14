@@ -13,6 +13,10 @@ public class WorkFlowDAO {
 	{
 		stat.executeUpdate("update wf_workflow set workflow_status="+status+" where workflow_id="+workflowId);
 	}
+	public void updateWorkFlowVar(int workflowId,String varName,String varValue,java.sql.Statement stat) throws Exception
+	{
+		stat.executeUpdate("update wf_param set param_value='"+varValue+"' where param_workflow_id="+workflowId+" and param_name='"+varName.toUpperCase()+"'");
+	}
 	public List<WorkFlowContext> getWorkFlowsToProcess(java.sql.Statement stat) throws Exception
 	{
 		StringBuffer sb=new StringBuffer("select * from wf_workflow where workflow_status=1");

@@ -5,6 +5,7 @@ import java.util.List;
 
 import net.developers.tiny.wf.dao.TaskInfoDAO;
 import net.developers.tiny.wf.dao.WorkFlowDAO;
+import net.developers.tiny.wf.model.BaseTask;
 import net.developers.tiny.wf.model.NodeVars;
 import net.developers.tiny.wf.model.PublicVars;
 import net.developers.tiny.wf.model.TaskNode;
@@ -55,7 +56,7 @@ public class TaskProcessor {
 		{
 			args[i]=task.getAutoDeal().getVars().get(i).getValue();
 		}
-		invokeMethod(clazzName,funcName,args);
+		invokeMethod(clazzName,funcName,args,task.getWorkflowId(),Integer.parseInt(task.getId()));
 		/////////////
 		List<TaskNode> tasks=dao.getNextTask(task.getWorkflowId(), this.getStat());
 		List<TaskNode> nextTasks=dao.getNextTask(tasks.get(0).getWorkflowId(), this.getStat());
@@ -64,13 +65,13 @@ public class TaskProcessor {
 		
 		logger.debug("自动节点处理完成："+task.getId());
 	}
-	public Object invokeMethod(String className, String methodName,
-			Object[] args) throws Exception{
+	public Object invokeMethod(String className, String methodName,Object[] args,int workflowId,int taskId) throws Exception{
 
-		Class ownerClass = Class.forName(className);	
-		Object owner = ownerClass.newInstance();
-		   
-        Class[] argsClass = new Class[args.length];    
+		Class<?> ownerClass = Class.forName(className);	
+		BaseTask owner = (BaseTask)ownerClass.newInstance();
+	   owner.setCurrentWorkTaskId(taskId);
+	   owner.setWorkflowId(workflowId);
+        Class<?>[] argsClass = new Class[args.length];    
    
         for (int i = 0, j = args.length; i < j; i++) {    
         	

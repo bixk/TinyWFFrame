@@ -43,6 +43,52 @@ public class TinyWorkFlowClient {
 		taskDao.processTask(Integer.parseInt(nextTask.get(0).getId()), TaskNode.S_TASK_STATUS_PROCESSING, stat);
 		}
 	}
+	public static List<PublicVars> getWorkFlowVars(int workflowId) throws Exception
+	{
+		MysqlConnectionPoolDataSource ds = new MysqlConnectionPoolDataSource();
+		ds.setURL(TinyWorkFlowClient.dbUrl);
+		ds.setCharacterEncoding("utf-8");
+		PooledConnection pooledConnection = ds.getPooledConnection();
+	 
+		java.sql.Connection connToMySQL = pooledConnection.getConnection();
+		java.sql.Statement stat=connToMySQL.createStatement();
+		WorkFlowDAO dao=new WorkFlowDAO();
+		WorkFlowContext workFlowInstance=dao.getWorkFlowsInfo(workflowId, stat);
+		stat.close();
+		connToMySQL.close();
+		pooledConnection.close();
+		return workFlowInstance.getVars();
+	}
+	public static void updateWorkFlowVars(int workFlowId,String varName,String value) throws Exception
+	{
+		MysqlConnectionPoolDataSource ds = new MysqlConnectionPoolDataSource();
+		ds.setURL(TinyWorkFlowClient.dbUrl);
+		ds.setCharacterEncoding("utf-8");
+		PooledConnection pooledConnection = ds.getPooledConnection();
+	 
+		java.sql.Connection connToMySQL = pooledConnection.getConnection();
+		java.sql.Statement stat=connToMySQL.createStatement();
+		WorkFlowDAO dao=new WorkFlowDAO();
+		dao.updateWorkFlowVar(workFlowId, varName, value, stat);
+		stat.close();
+		connToMySQL.close();
+		pooledConnection.close();
+	}
+	public static void updateTaskVars(int taskId,String varName,String value) throws Exception
+	{
+		MysqlConnectionPoolDataSource ds = new MysqlConnectionPoolDataSource();
+		ds.setURL(TinyWorkFlowClient.dbUrl);
+		ds.setCharacterEncoding("utf-8");
+		PooledConnection pooledConnection = ds.getPooledConnection();
+	 
+		java.sql.Connection connToMySQL = pooledConnection.getConnection();
+		java.sql.Statement stat=connToMySQL.createStatement();
+		TaskInfoDAO dao=new TaskInfoDAO();
+		dao.updateTaskNodeVar(taskId, varName, value, stat);
+		stat.close();
+		connToMySQL.close();
+		pooledConnection.close();
+	}
 	public static long createWorkFlow(String wfTemplate,int businessType,int businessId,Map<String,String> params) throws Exception
 	{
 		ResultSet rs=null;
@@ -115,9 +161,9 @@ public class TinyWorkFlowClient {
 		params.put("PARA_STR", "cc");
 		for(int i=1347;i<=1815;i++)
 		{
-// 		TinyWorkFlowClient.createWorkFlow("", 1000, 1, params);
- 		TinyWorkFlowClient.processUserTask(i, TaskNode.S_TASK_STATUS_SUCCESS);
- 		Thread.sleep(20);
+ 		TinyWorkFlowClient.createWorkFlow("", 1000, 1, params);
+// 		TinyWorkFlowClient.processUserTask(i, TaskNode.S_TASK_STATUS_SUCCESS);
+// 		Thread.sleep(20);
 		}
 //		TinyWorkFlowClient.processUserTask(7, TaskNode.S_TASK_STATUS_SUCCESS);
 //		TinyWorkFlowClient.processUserTask(8, TaskNode.S_TASK_STATUS_SUCCESS);

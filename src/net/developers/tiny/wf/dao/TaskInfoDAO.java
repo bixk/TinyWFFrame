@@ -19,6 +19,11 @@ public class TaskInfoDAO {
 	{
 		
 	}
+	public void updateTaskNodeVar(int taskId,String varName,String varValue,java.sql.Statement stat) throws Exception
+	{
+		logger.info("update wf_task_param set param_value='"+varValue+"' where param_task_id="+taskId+" and param_context_var_name='"+varName.toUpperCase()+"'");
+		stat.executeUpdate("update wf_task_param set param_value='"+varValue+"' where param_task_id="+taskId+" and param_context_var_name='"+varName.toUpperCase()+"'");
+	}
 	public void processTask(int taskId,int status,java.sql.Statement stat) throws Exception
 	{
 		logger.debug("update wf_task set task_status="+status+" where task_id="+taskId);
