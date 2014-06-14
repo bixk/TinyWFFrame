@@ -1,0 +1,211 @@
+2014-06-13 22:13:51,525 - 待处理的流程数量：1
+ 2014-06-13 22:14:17,200 - 待处理的流程数量：1
+ 2014-06-13 22:14:23,506 - 待处理的流程数量：1
+ 2014-06-13 22:15:36,512 - 待处理的流程数量：1
+ 2014-06-13 22:16:42,191 - 待处理的流程数量：2
+ 2014-06-13 22:17:50,504 - 待处理的流程数量：2
+ 2014-06-13 22:18:01,500 - 待处理的流程数量：2
+ 2014-06-13 22:19:00,177 - 待处理的流程数量：2
+ 2014-06-13 22:19:00,178 - 处理流程：workflow
+ 2014-06-13 22:19:00,178 - 处理流程：workflow
+ 2014-06-13 22:21:29,792 - 待处理的流程数量：2
+ 2014-06-13 22:21:29,792 - 处理流程：workflow:3
+ 2014-06-13 22:21:29,792 - 处理流程：workflow:4
+ 2014-06-13 23:00:22,459 - 待处理的流程数量：2
+ 2014-06-13 23:00:22,460 - 处理流程：workflow:3
+ 2014-06-13 23:01:11,480 - 待处理的流程数量：2
+ 2014-06-13 23:01:11,481 - 处理流程：workflow:3
+ 2014-06-13 23:01:32,925 - 待处理的流程数量：2
+ 2014-06-13 23:01:32,925 - 处理流程：workflow:3
+ 2014-06-13 23:01:55,041 - 待处理的流程数量：2
+ 2014-06-13 23:01:55,042 - 处理流程：workflow:3
+ 2014-06-13 23:07:46,110 - 待处理的流程数量：2
+ 2014-06-13 23:07:46,111 - 处理流程：workflow:3
+ 2014-06-13 23:07:46,114 - 处理流程：workflow:4
+ 2014-06-13 23:08:22,735 - 待处理的流程数量：2
+ 2014-06-13 23:08:22,736 - 处理流程：workflow:3
+ 2014-06-13 23:09:55,993 - 待处理的流程数量：2
+ 2014-06-13 23:09:55,994 - 处理流程：workflow:3
+ 2014-06-13 23:09:56,037 - Setting default value: false
+ 2014-06-13 23:09:56,037 - Converting 'Boolean' value 'false' to type 'Boolean'
+ 2014-06-13 23:09:56,037 -     No conversion required, value is already a Boolean
+ 2014-06-13 23:09:56,041 - Setting default value: 0
+ 2014-06-13 23:09:56,041 - Converting 'Integer' value '0' to type 'Byte'
+ 2014-06-13 23:09:56,041 -     Converted to Byte value '0'
+ 2014-06-13 23:09:56,042 - Setting default value:  
+ 2014-06-13 23:09:56,042 - Converting 'Character' value ' ' to type 'Character'
+ 2014-06-13 23:09:56,042 -     No conversion required, value is already a Character
+ 2014-06-13 23:09:56,043 - Setting default value: 0
+ 2014-06-13 23:09:56,043 - Converting 'Integer' value '0' to type 'Double'
+ 2014-06-13 23:09:56,044 -     Converted to Double value '0.0'
+ 2014-06-13 23:09:56,044 - Setting default value: 0
+ 2014-06-13 23:09:56,044 - Converting 'Integer' value '0' to type 'Float'
+ 2014-06-13 23:09:56,044 -     Converted to Float value '0.0'
+ 2014-06-13 23:09:56,045 - Setting default value: 0
+ 2014-06-13 23:09:56,045 - Converting 'Integer' value '0' to type 'Integer'
+ 2014-06-13 23:09:56,045 -     No conversion required, value is already a Integer
+ 2014-06-13 23:09:56,046 - Setting default value: 0
+ 2014-06-13 23:09:56,046 - Converting 'Integer' value '0' to type 'Long'
+ 2014-06-13 23:09:56,046 -     Converted to Long value '0'
+ 2014-06-13 23:09:56,049 - Setting default value: 0
+ 2014-06-13 23:09:56,049 - Converting 'Integer' value '0' to type 'Short'
+ 2014-06-13 23:09:56,049 -     Converted to Short value '0'
+ 2014-06-13 23:09:56,051 - Setting default value: 0.0
+ 2014-06-13 23:09:56,051 - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+ 2014-06-13 23:09:56,051 -     No conversion required, value is already a BigDecimal
+ 2014-06-13 23:09:56,052 - Setting default value: 0
+ 2014-06-13 23:09:56,052 - Converting 'BigInteger' value '0' to type 'BigInteger'
+ 2014-06-13 23:09:56,052 -     No conversion required, value is already a BigInteger
+ 2014-06-13 23:09:56,052 - Setting default value: false
+ 2014-06-13 23:09:56,052 - Converting 'Boolean' value 'false' to type 'Boolean'
+ 2014-06-13 23:09:56,054 -     No conversion required, value is already a Boolean
+ 2014-06-13 23:09:56,055 - Setting default value: 0
+ 2014-06-13 23:09:56,055 - Converting 'Integer' value '0' to type 'Byte'
+ 2014-06-13 23:09:56,055 -     Converted to Byte value '0'
+ 2014-06-13 23:09:56,055 - Setting default value:  
+ 2014-06-13 23:09:56,055 - Converting 'Character' value ' ' to type 'Character'
+ 2014-06-13 23:09:56,055 -     No conversion required, value is already a Character
+ 2014-06-13 23:09:56,055 - Setting default value: 0
+ 2014-06-13 23:09:56,055 - Converting 'Integer' value '0' to type 'Double'
+ 2014-06-13 23:09:56,055 -     Converted to Double value '0.0'
+ 2014-06-13 23:09:56,055 - Setting default value: 0
+ 2014-06-13 23:09:56,055 - Converting 'Integer' value '0' to type 'Float'
+ 2014-06-13 23:09:56,056 -     Converted to Float value '0.0'
+ 2014-06-13 23:09:56,056 - Setting default value: 0
+ 2014-06-13 23:09:56,056 - Converting 'Integer' value '0' to type 'Integer'
+ 2014-06-13 23:09:56,056 -     No conversion required, value is already a Integer
+ 2014-06-13 23:09:56,056 - Setting default value: 0
+ 2014-06-13 23:09:56,056 - Converting 'Integer' value '0' to type 'Long'
+ 2014-06-13 23:09:56,056 -     Converted to Long value '0'
+ 2014-06-13 23:09:56,056 - Setting default value: 0
+ 2014-06-13 23:09:56,056 - Converting 'Integer' value '0' to type 'Short'
+ 2014-06-13 23:09:56,056 -     Converted to Short value '0'
+ 2014-06-13 23:09:56,057 - Setting default value: 
+ 2014-06-13 23:09:56,058 - Converting 'String' value '' to type 'String'
+ 2014-06-13 23:09:56,065 - Setting default value: [Z@67b6d4ae
+ 2014-06-13 23:09:56,065 - Converting 'boolean[]' value '[Z@67b6d4ae' to type 'boolean[]'
+ 2014-06-13 23:09:56,065 -     No conversion required, value is already a boolean[]
+ 2014-06-13 23:09:56,065 - Setting default value: [B@34b7bfc0
+ 2014-06-13 23:09:56,065 - Converting 'byte[]' value '[B@34b7bfc0' to type 'byte[]'
+ 2014-06-13 23:09:56,065 -     No conversion required, value is already a byte[]
+ 2014-06-13 23:09:56,066 - Setting default value: [C@366e2eef
+ 2014-06-13 23:09:56,066 - Converting 'char[]' value '[C@366e2eef' to type 'char[]'
+ 2014-06-13 23:09:56,066 -     No conversion required, value is already a char[]
+ 2014-06-13 23:09:56,066 - Setting default value: [D@6df97b55
+ 2014-06-13 23:09:56,066 - Converting 'double[]' value '[D@6df97b55' to type 'double[]'
+ 2014-06-13 23:09:56,066 -     No conversion required, value is already a double[]
+ 2014-06-13 23:09:56,066 - Setting default value: [F@3cbbc1e0
+ 2014-06-13 23:09:56,066 - Converting 'float[]' value '[F@3cbbc1e0' to type 'float[]'
+ 2014-06-13 23:09:56,066 -     No conversion required, value is already a float[]
+ 2014-06-13 23:09:56,066 - Setting default value: [I@35fb3008
+ 2014-06-13 23:09:56,066 - Converting 'int[]' value '[I@35fb3008' to type 'int[]'
+ 2014-06-13 23:09:56,066 -     No conversion required, value is already a int[]
+ 2014-06-13 23:09:56,066 - Setting default value: [J@7225790e
+ 2014-06-13 23:09:56,067 - Converting 'long[]' value '[J@7225790e' to type 'long[]'
+ 2014-06-13 23:09:56,067 -     No conversion required, value is already a long[]
+ 2014-06-13 23:09:56,067 - Setting default value: [S@54a097cc
+ 2014-06-13 23:09:56,067 - Converting 'short[]' value '[S@54a097cc' to type 'short[]'
+ 2014-06-13 23:09:56,067 -     No conversion required, value is already a short[]
+ 2014-06-13 23:09:56,067 - Setting default value: [Ljava.math.BigDecimal;@36f6e879
+ 2014-06-13 23:09:56,067 - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@36f6e879' to type 'BigDecimal[]'
+ 2014-06-13 23:09:56,067 -     No conversion required, value is already a BigDecimal[]
+ 2014-06-13 23:09:56,067 - Setting default value: [Ljava.math.BigInteger;@3551a94
+ 2014-06-13 23:09:56,067 - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@3551a94' to type 'BigInteger[]'
+ 2014-06-13 23:09:56,067 -     No conversion required, value is already a BigInteger[]
+ 2014-06-13 23:09:56,067 - Setting default value: [Ljava.lang.Boolean;@52af6cff
+ 2014-06-13 23:09:56,067 - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@52af6cff' to type 'Boolean[]'
+ 2014-06-13 23:09:56,068 -     No conversion required, value is already a Boolean[]
+ 2014-06-13 23:09:56,068 - Setting default value: [Ljava.lang.Byte;@2c9f9fb0
+ 2014-06-13 23:09:56,068 - Converting 'Byte[]' value '[Ljava.lang.Byte;@2c9f9fb0' to type 'Byte[]'
+ 2014-06-13 23:09:56,068 -     No conversion required, value is already a Byte[]
+ 2014-06-13 23:09:56,068 - Setting default value: [Ljava.lang.Character;@9f70c54
+ 2014-06-13 23:09:56,068 - Converting 'Character[]' value '[Ljava.lang.Character;@9f70c54' to type 'Character[]'
+ 2014-06-13 23:09:56,068 -     No conversion required, value is already a Character[]
+ 2014-06-13 23:09:56,068 - Setting default value: [Ljava.lang.Double;@737996a0
+ 2014-06-13 23:09:56,068 - Converting 'Double[]' value '[Ljava.lang.Double;@737996a0' to type 'Double[]'
+ 2014-06-13 23:09:56,068 -     No conversion required, value is already a Double[]
+ 2014-06-13 23:09:56,068 - Setting default value: [Ljava.lang.Float;@50f8360d
+ 2014-06-13 23:09:56,069 - Converting 'Float[]' value '[Ljava.lang.Float;@50f8360d' to type 'Float[]'
+ 2014-06-13 23:09:56,069 -     No conversion required, value is already a Float[]
+ 2014-06-13 23:09:56,069 - Setting default value: [Ljava.lang.Integer;@13c78c0b
+ 2014-06-13 23:09:56,069 - Converting 'Integer[]' value '[Ljava.lang.Integer;@13c78c0b' to type 'Integer[]'
+ 2014-06-13 23:09:56,069 -     No conversion required, value is already a Integer[]
+ 2014-06-13 23:09:56,069 - Setting default value: [Ljava.lang.Long;@3dd3bcd
+ 2014-06-13 23:09:56,069 - Converting 'Long[]' value '[Ljava.lang.Long;@3dd3bcd' to type 'Long[]'
+ 2014-06-13 23:09:56,069 -     No conversion required, value is already a Long[]
+ 2014-06-13 23:09:56,069 - Setting default value: [Ljava.lang.Short;@26f67b76
+ 2014-06-13 23:09:56,069 - Converting 'Short[]' value '[Ljava.lang.Short;@26f67b76' to type 'Short[]'
+ 2014-06-13 23:09:56,069 -     No conversion required, value is already a Short[]
+ 2014-06-13 23:09:56,069 - Setting default value: [Ljava.lang.String;@7f560810
+ 2014-06-13 23:09:56,069 - Converting 'String[]' value '[Ljava.lang.String;@7f560810' to type 'String[]'
+ 2014-06-13 23:09:56,069 -     No conversion required, value is already a String[]
+ 2014-06-13 23:09:56,069 - Setting default value: [Ljava.lang.Class;@69d9c55
+ 2014-06-13 23:09:56,070 - Converting 'Class[]' value '[Ljava.lang.Class;@69d9c55' to type 'Class[]'
+ 2014-06-13 23:09:56,070 -     No conversion required, value is already a Class[]
+ 2014-06-13 23:09:56,070 - Setting default value: [Ljava.util.Date;@7ca48474
+ 2014-06-13 23:09:56,070 - Converting 'Date[]' value '[Ljava.util.Date;@7ca48474' to type 'Date[]'
+ 2014-06-13 23:09:56,070 -     No conversion required, value is already a Date[]
+ 2014-06-13 23:09:56,070 - Setting default value: [Ljava.util.Calendar;@59e84876
+ 2014-06-13 23:09:56,070 - Converting 'Calendar[]' value '[Ljava.util.Calendar;@59e84876' to type 'Calendar[]'
+ 2014-06-13 23:09:56,070 -     No conversion required, value is already a Calendar[]
+ 2014-06-13 23:09:56,070 - Setting default value: [Ljava.io.File;@39fb3ab6
+ 2014-06-13 23:09:56,070 - Converting 'java.io.File[]' value '[Ljava.io.File;@39fb3ab6' to type 'java.io.File[]'
+ 2014-06-13 23:09:56,070 -     No conversion required, value is already a java.io.File[]
+ 2014-06-13 23:09:56,071 - Setting default value: [Ljava.sql.Date;@7946e1f4
+ 2014-06-13 23:09:56,071 - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@7946e1f4' to type 'java.sql.Date[]'
+ 2014-06-13 23:09:56,071 -     No conversion required, value is already a java.sql.Date[]
+ 2014-06-13 23:09:56,071 - Setting default value: [Ljava.sql.Time;@5cc7c2a6
+ 2014-06-13 23:09:56,071 - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@5cc7c2a6' to type 'java.sql.Time[]'
+ 2014-06-13 23:09:56,071 -     No conversion required, value is already a java.sql.Time[]
+ 2014-06-13 23:09:56,071 - Setting default value: [Ljava.sql.Timestamp;@4590c9c3
+ 2014-06-13 23:09:56,071 - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@4590c9c3' to type 'java.sql.Timestamp[]'
+ 2014-06-13 23:09:56,071 -     No conversion required, value is already a java.sql.Timestamp[]
+ 2014-06-13 23:09:56,072 - Setting default value: [Ljava.net.URL;@5056dfcb
+ 2014-06-13 23:09:56,072 - Converting 'java.net.URL[]' value '[Ljava.net.URL;@5056dfcb' to type 'java.net.URL[]'
+ 2014-06-13 23:09:56,072 -     No conversion required, value is already a java.net.URL[]
+ 2014-06-13 23:09:56,079 - Describing bean: net.developers.tiny.wf.model.TaskNode
+ 2014-06-13 23:09:56,084 - Converting 'net.developers.tiny.wf.model.AutoDealSection' value 'net.developers.tiny.wf.model.AutoDealSection@5ae9a829' to type 'String'
+ 2014-06-13 23:09:56,085 - Converting 'Class' value 'class net.developers.tiny.wf.model.TaskNode' to type 'String'
+ 2014-06-13 23:09:56,085 - Converting 'ArrayList' value '[net.developers.tiny.wf.model.GotoItem@6d8a00e3]' to type 'String'
+ 2014-06-13 23:09:56,085 - Converting 'String' value '116' to type 'String'
+ 2014-06-13 23:09:56,085 - Converting 'String' value 'start' to type 'String'
+ 2014-06-13 23:09:56,085 - Converting 'HashMap' value '{}' to type 'String'
+ 2014-06-13 23:09:56,085 - Converting 'ArrayList' value '[]' to type 'String'
+ 2014-06-13 23:09:56,085 -     Using default value ''
+ 2014-06-13 23:09:56,085 - Converting 'Integer' value '-1' to type 'String'
+ 2014-06-13 23:09:56,085 - Converting 'Integer' value '-1' to type 'String'
+ 2014-06-13 23:09:56,085 - Converting 'Boolean' value 'true' to type 'String'
+ 2014-06-13 23:09:56,085 - Converting 'Integer' value '1' to type 'String'
+ 2014-06-13 23:09:56,086 - Converting 'String' value '1' to type 'String'
+ 2014-06-13 23:09:56,086 - Converting 'Integer' value '1' to type 'String'
+ 2014-06-13 23:09:56,086 - Converting 'Integer' value '3' to type 'String'
+ 2014-06-13 23:09:56,086 - 当前待处理节点:{autoDeal=net.developers.tiny.wf.model.AutoDealSection@5ae9a829, roleId=-1, start=true, taskTag=null, label=start, orgTaskType=null, taskOrderId=1, taskType=1, id=116, class=class net.developers.tiny.wf.model.TaskNode, nextTask={}, staffId=-1, workflowId=3, gotoItems=net.developers.tiny.wf.model.GotoItem@6d8a00e3, nodeVars=null, status=1}
+ 2014-06-13 23:09:56,086 - 处理流程：workflow:4
+ 2014-06-13 23:09:56,089 - Describing bean: net.developers.tiny.wf.model.TaskNode
+ 2014-06-13 23:09:56,090 - Converting 'net.developers.tiny.wf.model.AutoDealSection' value 'net.developers.tiny.wf.model.AutoDealSection@1810399e' to type 'String'
+ 2014-06-13 23:09:56,090 - Converting 'Class' value 'class net.developers.tiny.wf.model.TaskNode' to type 'String'
+ 2014-06-13 23:09:56,090 - Converting 'ArrayList' value '[net.developers.tiny.wf.model.GotoItem@32d992b2]' to type 'String'
+ 2014-06-13 23:09:56,090 - Converting 'String' value '116' to type 'String'
+ 2014-06-13 23:09:56,090 - Converting 'String' value 'start' to type 'String'
+ 2014-06-13 23:09:56,090 - Converting 'HashMap' value '{}' to type 'String'
+ 2014-06-13 23:09:56,090 - Converting 'ArrayList' value '[]' to type 'String'
+ 2014-06-13 23:09:56,090 -     Using default value ''
+ 2014-06-13 23:09:56,090 - Converting 'Integer' value '-1' to type 'String'
+ 2014-06-13 23:09:56,091 - Converting 'Integer' value '-1' to type 'String'
+ 2014-06-13 23:09:56,091 - Converting 'Boolean' value 'true' to type 'String'
+ 2014-06-13 23:09:56,091 - Converting 'Integer' value '1' to type 'String'
+ 2014-06-13 23:09:56,091 - Converting 'String' value '1' to type 'String'
+ 2014-06-13 23:09:56,091 - Converting 'Integer' value '1' to type 'String'
+ 2014-06-13 23:09:56,091 - Converting 'Integer' value '3' to type 'String'
+ 2014-06-13 23:09:56,091 - 当前待处理节点:{autoDeal=net.developers.tiny.wf.model.AutoDealSection@1810399e, roleId=-1, start=true, taskTag=null, label=start, orgTaskType=null, taskOrderId=1, taskType=1, id=116, class=class net.developers.tiny.wf.model.TaskNode, nextTask={}, staffId=-1, workflowId=3, gotoItems=net.developers.tiny.wf.model.GotoItem@32d992b2, nodeVars=null, status=1}
+ 2014-06-13 23:10:44,913 - 待处理的流程数量：2
+ 2014-06-13 23:10:44,914 - 处理流程：workflow:3
+ 2014-06-13 23:10:44,919 - 当前待处理节点:start-116
+ 2014-06-13 23:10:44,919 - 处理流程：workflow:4
+ 2014-06-13 23:10:44,922 - 当前待处理节点:start-116
+ 2014-06-13 23:12:02,172 - 待处理的流程数量：2
+ 2014-06-13 23:12:02,172 - 处理流程：workflow:3
+ 2014-06-13 23:12:02,178 - 当前待处理节点:start-116
+ 2014-06-13 23:12:02,178 - 处理流程：workflow:4
+ 2014-06-13 23:12:02,179 - 当前待处理节点:start-126
+ 

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<workflow label="裸机销售" tasktype="workflow" tasktag="com.asiainfo.crm.aichncpr.workflow.vm.lib.bareMachineSale">
+  <vars name="PARA_STR" datatype="java.lang.String" inouttype="in"/>
+  <vars name="RESULT_STR" datatype="java.lang.String" inouttype="out"/>
+  <vars name="_TASK_JUGE_RESULT" datatype="java.lang.String" inouttype="inner" description="判断节点结果"/>
+  <task id="1" label="开始" tasktype="start" isstart="true">
+    <uiinfo>373,49,80,25</uiinfo>
+    <gotoitem goto="4"/>
+    <autodeal>
+      <runtype/>
+      <servicename/>
+      <runclassname/>
+      <runfunctionname/>
+    </autodeal>
+  </task>
+  <task id="4" label="判断支付方式" tasktype="autodecision" tasktag="RESULT_STR">
+    <uiinfo>377,108,80,25</uiinfo>
+    <gotoitem condition="0001" goto="5"/>
+    <gotoitem condition="default" goto="12"/>
+    <autodeal>
+      <runtype>service</runtype>
+      <servicename>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</servicename>
+      <runclassname>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</runclassname>
+      <runfunctionname>selectBranchByPayMode</runfunctionname>
+      <vars name="P_0" datatype="java.lang.String" contextvarName="PARA_STR" defaultvalue="" inouttype="in" description=""/>
+      <vars name="return" datatype="java.lang.String" contextvarName="RESULT_STR" defaultvalue="" inouttype="return" description=""/>
+    </autodeal>
+  </task>
+  <task id="5" label="发送订单给人工热线" tasktype="auto" tasktag="RESULT_STR">
+    <uiinfo>321,163,205,25</uiinfo>
+    <gotoitem goto="6"/>
+    <autodeal>
+      <runtype>service</runtype>
+      <servicename>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</servicename>
+      <runclassname>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</runclassname>
+      <runfunctionname>sendRequestToArtificialHotline</runfunctionname>
+      <vars name="P_0" datatype="java.lang.String" contextvarName="PARA_STR" defaultvalue="" inouttype="in" description=""/>
+      <vars name="return" datatype="java.lang.String" contextvarName="RESULT_STR" defaultvalue="" inouttype="return" description=""/>
+    </autodeal>
+  </task>
+  <task id="6" label="等待人工热线反馈信息" tasktype="user" tasktag="RESULT_STR">
+    <uiinfo>355,210,135,25</uiinfo>
+    <gotoitem goto="8"/>
+    <autodeal>
+      <runtype>service</runtype>
+      <servicename>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</servicename>
+      <runclassname>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</runclassname>
+      <runfunctionname>waitInfoFromArtificialHotline</runfunctionname>
+      <vars name="P_0" datatype="java.lang.String" contextvarName="PARA_STR" defaultvalue="" inouttype="in" description=""></vars>
+      <vars name="return" datatype="java.lang.String" contextvarName="RESULT_STR" defaultvalue="" inouttype="return" description=""></vars>
+    </autodeal>
+    <user taskusertype="staff" organizeid="88888" taskuserid="888"/>
+  </task>
+  <task id="8" label="根据反馈信息选择方式" tasktype="autodecision" tasktag="RESULT_STR">
+    <uiinfo>356,260,151,25</uiinfo>
+    <gotoitem condition="0002" goto="10"/>
+    <gotoitem condition="0003" goto="9"/>
+    <gotoitem condition="0001" goto="11"/>
+    <gotoitem condition="default" goto="12"/>
+    <autodeal>
+      <runtype>service</runtype>
+      <servicename>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</servicename>
+      <runclassname>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</runclassname>
+      <runfunctionname>selectBranchFromArtificialHotline</runfunctionname>
+      <vars name="P_0" datatype="java.lang.String" contextvarName="PARA_STR" defaultvalue="" inouttype="in" description=""/>
+      <vars name="return" datatype="java.lang.String" contextvarName="RESULT_STR" defaultvalue="" inouttype="return" description=""/>
+    </autodeal>
+  </task>
+  <task id="9" label="营业厅处理" tasktype="auto" tasktag="RESULT_STR">
+    <uiinfo>280,344,80,25</uiinfo>
+    <gotoitem goto="12"/>
+    <autodeal>
+      <runtype>service</runtype>
+      <servicename>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</servicename>
+      <runclassname>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</runclassname>
+      <runfunctionname>makeAnAppointmentToBusinessHall</runfunctionname>
+      <vars name="P_0" datatype="java.lang.String" contextvarName="PARA_STR" defaultvalue="" inouttype="in" description=""/>
+      <vars name="return" datatype="java.lang.String" contextvarName="RESULT_STR" defaultvalue="" inouttype="return" description=""/>
+    </autodeal>
+  </task>
+  <task id="10" label="物流处理" tasktype="auto" tasktag="RESULT_STR">
+    <uiinfo>391,342,80,25</uiinfo>
+    <gotoitem goto="12"/>
+    <autodeal>
+      <runtype>service</runtype>
+      <servicename>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</servicename>
+      <runclassname>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</runclassname>
+      <runfunctionname>logisticsDelivery</runfunctionname>
+      <vars name="P_0" datatype="java.lang.String" contextvarName="PARA_STR" defaultvalue="" inouttype="in" description=""/>
+      <vars name="return" datatype="java.lang.String" contextvarName="RESULT_STR" defaultvalue="" inouttype="return" description=""/>
+    </autodeal>
+  </task>
+  <task id="11" label="订单取消" tasktype="auto" tasktag="RESULT_STR">
+    <uiinfo>497,341,80,25</uiinfo>
+    <gotoitem goto="12"/>
+    <autodeal>
+      <runtype>service</runtype>
+      <servicename>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</servicename>
+      <runclassname>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</runclassname>
+      <runfunctionname>colseOrder</runfunctionname>
+      <vars name="P_0" datatype="java.lang.String" contextvarName="PARA_STR" defaultvalue="" inouttype="in" description=""/>
+      <vars name="return" datatype="java.lang.String" contextvarName="RESULT_STR" defaultvalue="" inouttype="return" description=""/>
+    </autodeal>
+  </task>
+  <task id="12" label="结束处理" tasktype="auto" tasktag="RESULT_STR">
+    <uiinfo>394,405,80,25</uiinfo>
+    <gotoitem goto="13"/>
+    <autodeal>
+      <runtype>service</runtype>
+      <servicename>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</servicename>
+      <runclassname>com.asiainfo.crm.aichncpr.newgz.workflow.service.interfaces.IBareMachineSaleSV</runclassname>
+      <runfunctionname>end</runfunctionname>
+      <vars name="P_0" datatype="java.lang.String" contextvarName="PARA_STR" defaultvalue="" inouttype="in" description=""/>
+      <vars name="return" datatype="java.lang.String" contextvarName="RESULT_STR" defaultvalue="" inouttype="return" description=""/>
+    </autodeal>
+  </task>
+  <task id="13" label="结束" tasktype="finish">
+    <uiinfo>396,457,80,25</uiinfo>
+    <autodeal>
+      <runtype/>
+      <servicename/>
+      <runclassname/>
+      <runfunctionname/>
+    </autodeal>
+  </task>
+  <join taska="1" taskb="4">
+    <uiinfo>10.0,10.0,500,500,413,61,417,108</uiinfo>
+  </join>
+  <join label="0001" taska="4" taskb="5">
+    <condition>0001</condition>
+    <uiinfo>10.0,10.0,500,500,417,120,423,163</uiinfo>
+  </join>
+  <join taska="5" taskb="6">
+    <uiinfo>10.0,10.0,500,500,423,175,422,210</uiinfo>
+  </join>
+  <join taska="6" taskb="8">
+    <uiinfo>10.0,10.0,500,500,422,222,431,260</uiinfo>
+  </join>
+  <join label="0002" taska="8" taskb="10">
+    <condition>0002</condition>
+    <uiinfo>10.0,10.0,500,500,431,272,431,342</uiinfo>
+  </join>
+  <join label="0003" taska="8" taskb="9">
+    <condition>0003</condition>
+    <uiinfo>10.0,10.0,500,500,431,272,360,356</uiinfo>
+  </join>
+  <join label="0001" taska="8" taskb="11">
+    <condition>0001</condition>
+    <uiinfo>10.0,10.0,500,500,431,272,497,353</uiinfo>
+  </join>
+  <join taska="10" taskb="12">
+    <uiinfo>10.0,10.0,500,500,431,354,434,405</uiinfo>
+  </join>
+  <join taska="11" taskb="12">
+    <uiinfo>10.0,10.0,500,500,537,353,474,417</uiinfo>
+  </join>
+  <join taska="9" taskb="12">
+    <uiinfo>10.0,10.0,500,500,320,356,394,417</uiinfo>
+  </join>
+  <join label="default" taska="4" taskb="12">
+    <condition>default</condition>
+    <uiinfo>10.0,10.0,500,500,417,120,144,122,144,422,394,417</uiinfo>
+  </join>
+  <join taska="12" taskb="13">
+    <uiinfo>10.0,10.0,500,500,434,417,436,457</uiinfo>
+  </join>
+  <join label="default" taska="8" taskb="12">
+    <condition>default</condition>
+    <uiinfo>10.0,10.0,500,500,431,272,650,272,650,303,650,417,474,417</uiinfo>
+  </join>
+</workflow>
