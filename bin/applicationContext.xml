@@ -2,6 +2,14 @@
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
 
 <beans>    
+	    <bean id="dataSource_c001" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+	        <property name="driverClass" value="com.mysql.jdbc.Driver" />
+	        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/cached_frame" />
+	        <property name="user" value="root" />
+	        <property name="password" value="root" />
+	        <property name="idleConnectionTestPeriod" value="60" />
+	        <property name="preferredTestQuery" value="select 1 from wf_task where task_id > 1" />
+	    </bean>
         <!-- 要调用的工作类 -->
         <bean id="quartzJob" class="net.developers.tiny.wf.jobs.QuartzJob"></bean>
         <!-- 定义调用对象和调用对象的方法 -->
